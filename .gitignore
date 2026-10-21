@@ -28,3 +28,7 @@ dist-ssr
 src/*.backup
 src/*.before-*
 src/*.lesson*
+
+# Local backup files
+src/App.jsx.auth-backup
+App.txt
