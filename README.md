@@ -1,16 +1,80 @@
-# React + Vite
+# EduCloud — Cloud Learning Platform
 
-This template provides a minimal setup to get React working in Vite with HMR and some Oxlint rules.
+EduCloud is a web-based learning platform focused on AWS cloud services, Linux, DevOps, and programming fundamentals.
 
-Currently, two official plugins are available:
+## Tech Stack
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+- React 19
+- Vite 8
+- JavaScript (ES Modules)
+- Oxlint
 
-## React Compiler
+## Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- Course listings for cloud and programming topics
+- AWS service learning content
+- Additional course lessons
+- API integration configured through environment variables
 
-## Expanding the Oxlint configuration
+## Getting Started
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and Oxlint's TypeScript related rules in your project.
+### Prerequisites
+
+- Node.js compatible with the installed Vite version
+- npm
+
+### Install dependencies
+
+    npm install
+
+### Configure environment
+
+Create a local `.env` file if API configuration is needed:
+
+    VITE_API_URL=http://localhost:YOUR_BACKEND_PORT
+
+Replace the example value with your actual backend API URL. Do not commit `.env` files or secrets.
+
+### Run locally
+
+    npm run dev
+
+### Build for production
+
+    npm run build
+
+### Lint
+
+    npm run lint
+
+### Preview production build
+
+    npm run preview
+
+## Project Structure
+
+    src/
+      App.jsx
+      App.css
+      ExtraCourseLesson.jsx
+      ExtraCourseLesson.css
+      extraLessons.js
+      index.css
+      main.jsx
+    public/
+      icons and lesson assets
+
+## Environment Variables
+
+- `VITE_API_URL` — API base URL used by the frontend.
+
+Only expose values through `VITE_*` variables if they are safe for public browser access. Never put private keys, database passwords, or backend secrets in frontend environment variables.
+
+## Repositories
+
+- Frontend: https://github.com/piyush-319/educloud-frontend
+- Backend: https://github.com/piyush-319/educloud-backend
+
+## Notes
+
+Deployment architecture and production infrastructure details will be documented after verification.
