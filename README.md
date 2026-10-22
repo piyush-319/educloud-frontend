@@ -78,3 +78,9 @@ Only expose values through `VITE_*` variables if they are safe for public browse
 ## Notes
 
 Deployment architecture and production infrastructure details will be documented after verification.
+
+
+
+<p align="center">
+  <img src="https://media.tenor.com/2roX3uxz_68AAAAC/cat-space.gif" width="200" alt="Running Cat GIF">
+</p>
